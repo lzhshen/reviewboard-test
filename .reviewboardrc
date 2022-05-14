@@ -1,5 +1,9 @@
 REVIEWBOARD_URL = "http://reviews.example.com/"
 REPOSITORY = "test-repo"
 REPOSITORY_TYPE = "git"
-BRANCH = "main"
+BRANCH = "main" # 目标分支，一般为 develop/main, 只作用于 RB MR 的显示，不影响 diff 的生成
+TRACKING_BRANCH = "main" # rbt post 时，所生成 diff 的比对分支，一般为 develop/main
+LAND_PUSH = True # MR 通过后，是否会自动提交到目标分支（LAND_DEST_BRANCH） 
 LAND_DEST_BRANCH = "main"
+LAND_DELETE_BRANCH = True # MR 合并后，是否自动删除 feature 分支
+LAND_SQUASH = True # 是否合并多个 commit
