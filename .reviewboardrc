@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "http://reviews.example.com/"
+REPOSITORY = "test-repo"
+REPOSITORY_TYPE = "git"
+BRANCH = "feature-rbtest"
+LAND_DEST_BRANCH = "main"
